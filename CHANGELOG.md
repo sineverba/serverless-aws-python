@@ -1,4 +1,4 @@
-# Next version
+# 0.2.0
 
 + Add `package-lock` and CHANGELOG
 + Refactor instructions
