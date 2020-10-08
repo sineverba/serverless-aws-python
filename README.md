@@ -12,6 +12,7 @@ $ npm install
 ### Serverless main command
 
 ```shell
-(env) $ serverless deploy # deploy to aws
+$ source env/bin/activate
 (env) $ sls offline # launch offline deploy
+(env) $ serverless deploy # deploy to aws
 ```

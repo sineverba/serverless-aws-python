@@ -3,7 +3,8 @@ import json
 def main(event,context):
 
     response = {
-        'message': 'success'
+        'message': 'success',
+        'version': '0.2.0'
     }
 
     print(response)

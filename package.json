@@ -1,6 +1,6 @@
 {
   "name": "serverless-aws-python",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Example for Serverless Framework application in Python",
   "main": "index.js",
   "scripts": {
