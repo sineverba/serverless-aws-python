@@ -21,9 +21,9 @@ package:
 
 functions:
   ping:
-    handler: ping.main
+    handler: src/api/v1/ping.main
     events:
       - http:
-          path: /ping
+          path: /v1/ping
           method: get
           cors: true
