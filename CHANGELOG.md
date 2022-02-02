@@ -1,5 +1,6 @@
 # Next version
 + Add instructions to use local serverless
++ Upgrade dependencies
 
 ## 0.2.0
 
