@@ -1,4 +1,7 @@
-# 0.2.0
+# Next version
++ Add instructions to use local serverless
+
+## 0.2.0
 
 + Add `package-lock` and CHANGELOG
 + Refactor instructions
