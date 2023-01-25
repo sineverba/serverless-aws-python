@@ -1,6 +1,6 @@
 IMAGE_NAME=sineverba/serverless-aws-python
 CONTAINER_NAME=serverless-aws-python
-VERSION=0.2.0-dev
+VERSION=0.3.0-dev
 
 build:
 	docker-compose build
