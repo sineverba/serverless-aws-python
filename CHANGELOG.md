@@ -1,6 +1,7 @@
 # Next version
 + Add instructions to use local serverless
 + Upgrade dependencies
++ Add docker development + Upgrade dependencies
 
 ## 0.2.0
 

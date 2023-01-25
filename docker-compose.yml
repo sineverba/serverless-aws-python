@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./development/Dockerfile
+    image: sineverba/serverless-aws-python:0.2.0-dev
+    container_name: serverless-aws-python-app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:3000"
+    networks:
+      - serverless-aws-python
+
+networks:
+  serverless-aws-python:
+    name: serverless-aws-python
+    driver: bridge
