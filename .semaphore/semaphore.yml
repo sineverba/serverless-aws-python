@@ -25,6 +25,6 @@ blocks:
             - checkout
             - docker build --tag $DOCKER_USERNAME/$DOCKER_IMAGE .
             - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE cat /etc/os-release | grep "Debian GNU/Linux 11 (bullseye)"
-	          - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE python -V | grep "3.11.4"
+            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE python -V | grep "3.11.4"
             - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE node -v | grep "18.16.1"
             - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE npm -v | grep "9.8.0"
