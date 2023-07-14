@@ -6,6 +6,6 @@ Serverless AWS Python Example
 ## Setup
 
 ```shell
-$ docker-compose build
-$ docker-compose up -d
+$ docker-compose build # (or docker compose build)
+$ docker-compose up -d # (or docker compose up -d)
 ```
