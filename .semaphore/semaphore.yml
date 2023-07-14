@@ -1,0 +1,30 @@
+version: v1.0
+
+name: Build and test Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+
+global_job_config:
+
+  env_vars:
+    - name: DOCKER_USERNAME
+      value: sineverba
+    - name: DOCKER_IMAGE
+      value: serverless-aws-python
+
+blocks:
+  - name: 'Build and test'
+    skip:
+      when: "tag =~ '.*'"
+    task:
+      jobs:
+        - name: 'Build and test'
+          commands:
+            - checkout
+            - docker build --tag $DOCKER_USERNAME/$DOCKER_IMAGE .
+            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE cat /etc/os-release | grep "Debian GNU/Linux 11 (bullseye)"
+	          - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE python -V | grep "3.11.4"
+            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE node -v | grep "18.16.1"
+            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE npm -v | grep "9.8.0"
