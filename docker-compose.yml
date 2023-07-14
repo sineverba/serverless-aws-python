@@ -5,7 +5,7 @@ services:
     build:
       context: ./
       dockerfile: ./development/Dockerfile
-    image: sineverba/serverless-aws-python:0.3.0-dev
+    image: sineverba/serverless-aws-python:0.4.0-dev
     container_name: serverless-aws-python-app
     volumes:
       - ./:/usr/src/app
