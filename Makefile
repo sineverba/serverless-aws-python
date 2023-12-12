@@ -1,6 +1,6 @@
 IMAGE_NAME=sineverba/serverless-aws-python
 CONTAINER_NAME=serverless-aws-python
-APP_VERSION=0.4.0-dev
+APP_VERSION=0.5.0-dev
 
 build:
 	docker build --tag $(IMAGE_NAME):$(APP_VERSION) --file development/Dockerfile "."
