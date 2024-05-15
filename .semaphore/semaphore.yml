@@ -13,6 +13,12 @@ global_job_config:
       value: sineverba
     - name: DOCKER_IMAGE
       value: serverless-aws-python
+    - name: PYTHON_VERSION
+      value: 3.12.1
+    - name: NODE_VERSION
+      value: 20.10.0
+    - name: NPM_VERSION
+      value: 10.2.5
 
 blocks:
   - name: 'Build and test'
@@ -23,8 +29,32 @@ blocks:
         - name: 'Build and test'
           commands:
             - checkout
-            - docker build --tag $DOCKER_USERNAME/$DOCKER_IMAGE --file development/Dockerfile "."
-            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE cat /etc/os-release | grep "Debian GNU/Linux 11 (bullseye)"
-            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE python -V | grep "3.12.1"
-            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE node -v | grep "20.10.0"
-            - docker run --rm -it $DOCKER_USERNAME/$DOCKER_IMAGE npm -v | grep "10.2.5"
+            - >-
+              docker build 
+              --tag $DOCKER_USERNAME/$DOCKER_IMAGE 
+              --file .devcontainer/Dockerfile 
+              "."
+            - >-
+              docker run 
+              --rm 
+              -it 
+              $DOCKER_USERNAME/$DOCKER_IMAGE 
+              cat /etc/os-release | grep "Debian GNU/Linux 11 (bullseye)"
+            - >-
+              docker run 
+              --rm 
+              -it 
+              $DOCKER_USERNAME/$DOCKER_IMAGE 
+              python -V | grep $PYTHON_VERSION
+            - >-
+              docker run 
+              --rm 
+              -it 
+              $DOCKER_USERNAME/$DOCKER_IMAGE 
+              node -v | grep $NODE_VERSION
+            - >-
+              docker run 
+              --rm 
+              -it 
+              $DOCKER_USERNAME/$DOCKER_IMAGE 
+              npm -v | grep $NPM_VERSION

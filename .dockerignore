@@ -2,3 +2,5 @@
 .gitignore
 LICENSE
 Makefile
+package*.json
+node_modules/
