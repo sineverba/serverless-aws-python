@@ -14,11 +14,11 @@ global_job_config:
     - name: DOCKER_IMAGE
       value: serverless-aws-python
     - name: PYTHON_VERSION
-      value: 3.12.1
+      value: 3.12.3
     - name: NODE_VERSION
-      value: 20.10.0
+      value: 20.13.1
     - name: NPM_VERSION
-      value: 10.2.5
+      value: 10.7.0
 
 blocks:
   - name: 'Build and test'
