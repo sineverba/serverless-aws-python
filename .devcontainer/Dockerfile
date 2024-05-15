@@ -1,7 +1,7 @@
 # Pull official base image
-FROM python:3.12.1-slim-bullseye
-ENV NODE_VERSION=20.10.0
-ENV NPM_VERSION=10.2.5
+FROM python:3.12.3-slim-bullseye
+ENV NODE_VERSION=20.13.1
+ENV NPM_VERSION=10.7.0
 # Update and install
 RUN apt-get update -y && apt-get install \
         build-essential \
