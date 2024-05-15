@@ -1,4 +1,7 @@
-# 0.5.0
+# Next version
++ Migrate to `devcontainer`
+
+## 0.5.0
 + Upgrade dependencies
 
 ## 0.4.0
