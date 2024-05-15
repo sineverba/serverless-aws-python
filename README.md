@@ -10,7 +10,7 @@ Serverless AWS Python Example
 
 2. Open up the repository in VSCode, then, you shloud see the following notification:
 
-![VSCode popup](https://raw.githubusercontent.com/sineverba/serverless-aws-python/develop/images/folder.webp)
+![VSCode popup](https://raw.githubusercontent.com/sineverba/serverless-aws-python/master/images/folder.webp)
 
 3. Click on "Reopen in Container"
 
