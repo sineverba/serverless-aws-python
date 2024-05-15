@@ -1,4 +1,4 @@
-# Next version
+# 0.6.0
 + Migrate to `devcontainer`
 + Upgrade dependencies
 
