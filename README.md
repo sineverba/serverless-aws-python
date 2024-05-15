@@ -5,7 +5,14 @@ Serverless AWS Python Example
 
 ## Setup
 
-```shell
-$ docker-compose build # (or docker compose build)
-$ docker-compose up -d # (or docker compose up -d)
-```
+1. Click the following button
+
+[![Open in Remote - Containers](TODO)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/sineverba/serverless-aws-python.git)
+
+
+2. Or, open up the repository in VSCode, then, you shloud see the following notification:
+
+[TODO]
+
+
+
